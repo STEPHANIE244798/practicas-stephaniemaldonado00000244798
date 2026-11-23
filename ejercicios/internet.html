@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #ffffff;
+            max-width: 900px;
+            margin: -20px auto 30px auto;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav h2 {
+            font-size: 1.2rem;
+            color: #0f172a;
+            margin-bottom: 0.8rem;
+        }
+
+        nav ol {
+            padding-left: 1.5rem;
+        }
+
+        nav li {
+            margin-bottom: 0.5rem;
+        }
+
+        nav a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .concepto {
+            background-color: #ffffff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        /* Diseño alternado (impares: texto izq / img der, pares: img izq / texto der) */
+        .concepto.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .concepto-contenido {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .concepto-imagen {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+
+        .concepto-imagen img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .concepto h2 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #0f172a;
+            color: #94a3b8;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conceptos Básicos de Internet</h1>
+    </header>
+
+    <nav>
+        <h2>Menú de navegación rápida</h2>
+        <ol>
+            <li><a href="#que-es-internet">¿Qué es Internet?</a></li>
+            <li><a href="#proveedores-internet">¿Qué son los Proveedores de Internet?</a></li>
+            <li><a href="#tipos-proveedores">Tipos de Proveedores de Internet</a></li>
+            <li><a href="#carpeta-local-remota">Carpeta Local vs Carpeta Remota</a></li>
+            <li><a href="#ux-vs-ui">Experiencia de Usuario (UX) Vs Interfaz de Usuario (UI)</a></li>
+            <li><a href="#maquetacion-web">¿Qué es Maquetación Web?</a></li>
+            <li><a href="#modelo-de-cajas">¿Qué es el Modelo de Cajas en HTML y CSS?</a></li>
+        </ol>
+    </nav>
+
+    <main>
+
+        <!-- Sección 1: Texto Izquierda - Imagen Derecha -->
+        <section id="que-es-internet">
+            <article class="concepto">
+                <div class="concepto-contenido">
+                    <h2>¿Qué es Internet?</h2>
+                    <p>Internet es una red global descentralizada de computadoras y dispositivos interconectados entre sí. Funciona como una infraestructura digital que permite el intercambio masivo de información, datos e hipertextos a través de protocolos estandarizados (como TCP/IP), haciendo posible servicios como la navegación web, correo electrónico y streaming.</p>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/internet.jpg" alt="Ilustración de red global de internet">
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 2: Imagen Izquierda - Texto Derecha (reverse) -->
+        <section id="proveedores-internet">
+            <article class="concepto reverse">
+                <div class="concepto-contenido">
+                    <h2>¿Qué son los Proveedores de Internet?</h2>
+                    <p>Un Proveedor de Servicios de Internet (ISP, por sus siglas en inglés) es la empresa comercial u organización que brinda a los usuarios acceso a la red. Actúan como el puente entre nuestros dispositivos domésticos o móviles y la infraestructura global de internet, gestionando la conectividad y el ancho de banda.</p>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/isp.jpg" alt="Concepto de ISP y servicio de red">
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 3: Texto Izquierda - Imagen Derecha -->
+        <section id="tipos-proveedores">
+            <article class="concepto">
+                <div class="concepto-contenido">
+                    <h2>Tipos de Proveedores de Internet</h2>
+                    <p>Los proveedores ofrecen conexión según la tecnología empleada para transmitir la señal:</p>
+                    <ul>
+                        <li><strong>Fibra Óptica:</strong> Transmite datos mediante pulsos de luz, ofreciendo altísima velocidad y estabilidad.</li>
+                        <li><strong>Satélital:</strong> Envía datos vía microondas desde antenas hacia satélites, ideal para zonas rurales o alejadas.</li>
+                        <li><strong>Móvil (4G/5G):</strong> Conexión inalámbrica a través de antenas de telefonía celular.</li>
+                        <li><strong>DSL / Cable:</strong> Utiliza las líneas telefónicas tradicionales o las redes de televisión por cable.</li>
+                    </ul>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/tpi.jpg" alt="Tipos de conexión como fibra y satélite">
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 4: Imagen Izquierda - Texto Derecha (reverse) -->
+        <section id="carpeta-local-remota">
+            <article class="concepto reverse">
+                <div class="concepto-contenido">
+                    <h2>Carpeta Local vs Carpeta Remota</h2>
+                    <p>La <strong>carpeta local</strong> se refiere al directorio almacenado físicamente dentro del disco duro o memoria de tu computadora, accesible únicamente desde ese equipo sin requerir conexión a la red. Por el contrario, la <strong>carpeta remota</strong> reside en un servidor o computadora distante (como la nube o un servidor web); para acceder, modificar o subir archivos en ella es obligatorio estar conectado a internet.</p>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/Carpeta local y remota.jpeg" alt="Esquema entre servidor local y servidor remoto">
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 5: Texto Izquierda - Imagen Derecha -->
+        <section id="ux-vs-ui">
+            <article class="concepto">
+                <div class="concepto-contenido">
+                    <h2>Experiencia de Usuario (UX) Vs Interfaz de Usuario (UI)</h2>
+                    <p>La <strong>UI (User Interface)</strong> comprende los elementos visuales interactivos con los que el usuario interactúa en una pantalla: botones, colores, tipografías y maquetación. Por otro lado, la <strong>UX (User Experience)</strong> se enfoca en cómo se siente el usuario al navegar; analiza la usabilidad, la facilidad de flujo y la satisfacción general al resolver una necesidad dentro de la aplicación o sitio web.</p>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/UXUI.png" alt="Diagrama explicativo de UX y UI">
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 6: Imagen Izquierda - Texto Derecha (reverse) -->
+        <section id="maquetacion-web">
+            <article class="concepto reverse">
+                <div class="concepto-contenido">
+                    <h2>¿Qué es Maquetación Web?</h2>
+                    <p>Es la fase de desarrollo donde se traduce un diseño gráfico o boceto a código fuente ejecutable por los navegadores. Consiste en estructurar el contenido con etiquetas semánticas de HTML y aplicarle formato, posiciones y adaptabilidad mediante hojas de estilo CSS para que la página sea funcional y visualmente correcta en cualquier dispositivo.</p>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/maquetacion web.jpg" alt="Bocetos de maquetación estructurada">
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección 7: Texto Izquierda - Imagen Derecha -->
+        <section id="modelo-de-cajas">
+            <article class="concepto">
+                <div class="concepto-contenido">
+                    <h2>¿Qué es el Modelo de Cajas en HTML y CSS?</h2>
+                    <p>El modelo de cajas (Box Model) es el patrón fundamental sobre el cual se renderizan todos los elementos en un navegador web. Considera a cada elemento HTML como una caja rectangular compuesta por cuatro capas envolventes:</p>
+                    <ol>
+                        <li><strong>Content:</strong> El área del texto o imagen.</li>
+                        <li><strong>Padding:</strong> Espacio transparente entre el contenido y el borde.</li>
+                        <li><strong>Border:</strong> Línea limítrofe alrededor del contenido y relleno.</li>
+                        <li><strong>Margin:</strong> Espacio exterior transparente que separa la caja de otros elementos contiguos.</li>
+                    </ol>
+                </div>
+                <div class="concepto-imagen">
+                    <img src="/imagenes/caja modelo.jpg" alt="Esquema del Modelo de Cajas en CSS">
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Práctica de Conceptos Básicos de Internet</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+    
+</body>
+</html>

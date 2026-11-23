@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Youtube</title>
+    <link rel="stylesheet" href="/css/flexbox.css">
+
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #515797;
+            padding: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .flex-container div {
+            background-color: #909cda;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0f0f0f;
+            font-size: 2rem;
+        }
+
+h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0f0f0f;
+            font-size: 2rem;
+        }
+
+        /* Contenedor principal en una sola fila con Flexbox */
+        .galeria-videos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Cada tarjeta de video */
+        .video-card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo y dimensionamiento del iframe mediante CSS */
+        .video-card iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&#127932;Mi música favorita&#127932;</h1>
+    </header>
+    <section>
+        <div class="flex-container">
+        <!-- Video 1 -->
+        <article class="video-card">
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eTeT2vUxJrI?si=8ApZuaL4mJuRiZDx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div>
+                <div class="video-info">
+                <h2>BJ Lips & Princess Paparazzi - Love Potions</h2>
+            </div>
+        </article>
+
+        <!-- Video 2 -->
+            <article class="video-card">
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j2HkGuFd9lM?si=RleFDG44Zh7M2ATr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                <h2>Orange Sector - Farben</h2>
+            </div>
+        </article>
+
+        <!-- Video 3 -->
+            <article class="video-card">
+            <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jp5UMWjCgkc?si=eU3bkl3wWOf5pibI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                <h2>Bye X Circus</h2>
+            </div>
+        </article>
+            
+        </div>
+    </section>
+
+</body>
+</html>

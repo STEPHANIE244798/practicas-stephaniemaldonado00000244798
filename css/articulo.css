@@ -1,0 +1,184 @@
+/*ARTICULO CSS*/
+
+* {margin: 0;
+    padding: 0; }
+
+body {background-color: rgb(180, 182, 255);}
+
+h1 {background-color: rgb(115, 117, 191);
+    text-align: center;
+}
+
+/*ENCABEZADOS*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Mulish", "Segoe UI", sans-serif;
+    background-color: rgb(212, 221, 255);
+    color: #111;
+    padding: 30px 0;
+}
+
+
+/* Estilo del Título SEO / Header */
+h1 {
+    font-weight: 900;
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid black;
+    color: #2f3476;
+}
+
+/* Subtítulos de cada punto */
+h2 {
+    font-size: 2.20rem;
+    font-weight: 700;
+    color: #191921;
+    margin-top: 20px;
+    margin-bottom: 6px;
+
+}
+
+h3 {
+    font-weight: 1000;
+    font-size: 2.4em;
+}
+
+/* Párrafos compactos */
+p {
+    font-size: 1.85rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #36366c;
+}
+
+/* Sección de video y CTA final */
+.cta-section {
+    background-color: #3b357b;
+    color: white;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    color: #cad0df;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.btn-cta:hover {
+    background-color: #d90429;
+}
+
+/*LAYOUT*/
+#principal article{
+    padding: 20px 40px 10px 40px;
+    background-color: rgb(142, 145, 223);
+    width: 85%;
+    margin: 0px auto;
+}
+
+.contenedor {
+    /*background-color: rgb(88, 90, 167);*/
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    /*background-color: rgb(140, 100, 200);*/
+    margin: 0px auto;
+    box-sizing: border-box;
+    flex-flow: row;
+    justify-content: space-evenly;
+    min-height: 140px;
+
+
+}
+
+footer {
+    /*background-color: rgb(206, 208, 255);*/
+    text-align: center;
+    padding: 30px 0px;
+    margin-top: 25px;
+    font-size: 1.2em;
+}
+
+.items{
+    /*background-color: rgb(88, 90, 167);*/
+    box-sizing: border-box;
+    padding: 20px 0px 20px 0px;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+    /*width: 90%;*/
+}
+
+.article-image {
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.image-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 25px 0px;
+}
+
+.image-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0px;
+}
+
+
+#principal p{
+    padding: 16px 0px;
+    font-size: 24px;
+}
+
+/*@media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            .image-grid-2, .image-grid-3 {
+                grid-template-columns: 1fr;
+    }
+}*/
+
+.main-content {
+    width: 70%;
+    margin: 0 auto;
+}
